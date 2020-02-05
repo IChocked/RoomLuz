@@ -1,0 +1,21 @@
+body {
+  background-color: #946E83;
+}
+
+h1 {
+  align: center;
+  font-family: monospace;
+  font-size: 45px;
+  background-color: lightblue;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  border: 5px dashed gray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  font-family: monospace;
+  font-size: 20px;
+}

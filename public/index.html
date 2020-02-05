@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Room Luz</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script src="alarm.js"></script>
+  </head>
+
+  <body>
+    <h1>Set an Alarm!</h1>
+    <form id="alarm" target="_self">
+      Alarm Time (HH:MM, 24-Hour): <input type="text" name="alarm"><br>
+    </form>
+
+    <button onclick="setAlarm()" type="button">Submit</button> <br>
+    <button onclick="fanTimer(45)" type="button">Turn fan on for 45 mins</button>
+  </body>
+</html>
+
+
+<!-- TODO
+1. update website with current alarm times from Firebase DB
+-->
