@@ -52,10 +52,10 @@ def main():
         print(dates)
         try:
             date = firebase.get("/Time", "time")
-        except requests.exceptions.ConnectionError:
+        except:
             print("failed: " + str(error_count))
             error_count += 1
-            time.sleep(error_count * 10)
+            time.sleep(error_count * 10 + 0.01)
         else:
             error_count = 0
 
