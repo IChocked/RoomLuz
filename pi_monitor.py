@@ -47,9 +47,20 @@ def checkAlarm():
 
 
 def main():
+    error_count = 0
     while True:
         #print(dates)
-        date = firebase.get("/Time", "time")
+        try:
+            date = firebase.get("/Time", "time")
+        except requests.exceptions.ConnectionError:
+            print("failed: " + str(error_count))
+            error_count += 1
+            time.sleep(error_count * 10)
+        else:
+            error_count = 0
+
+
+
         #print(date)
         if (not date in dates and not date in archive):
             dates.append(date)
