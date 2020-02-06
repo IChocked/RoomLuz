@@ -49,7 +49,7 @@ def checkAlarm():
 def main():
     error_count = 0
     while True:
-        #print(dates)
+        print(dates)
         try:
             date = firebase.get("/Time", "time")
         except requests.exceptions.ConnectionError:
