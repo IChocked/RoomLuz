@@ -33,8 +33,8 @@ archive = []
 
 def checkAlarm():
     d = datetime.now()
-    #print("now")
-    #print("{:%Y-%m-%d %H:%M}".format(d))
+    print("now")
+    print("{:%Y-%m-%d %H:%M}".format(d))
 
     for date in dates:
         if "{:%Y-%m-%d %H:%M}".format(d) == date:
@@ -55,7 +55,7 @@ def main():
         except:
             print("failed: " + str(error_count))
             error_count += 1
-            time.sleep(error_count * 10 + 0.01)
+            time.sleep(error_count * 2 + 0.01)
         else:
             error_count = 0
 
@@ -68,7 +68,7 @@ def main():
         checkAlarm()
         # CHECK FANS
 
-        time.sleep(1)
+        time.sleep(0.2)
 
 
 
