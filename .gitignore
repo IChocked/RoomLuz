@@ -10,6 +10,7 @@ firebase-debug.log*
 .firebase/
 
 # Firebase config
+public/key.js
 
 # Uncomment this if you'd like others to create their own Firebase project.
 # For a team working on the same Firebase project(s), it is recommended to leave
@@ -17,6 +18,8 @@ firebase-debug.log*
 # .firebaserc
 
 # Runtime data
+.DS_Store
+public/.DS_Store
 pids
 *.pid
 *.seed
